@@ -17,7 +17,7 @@ pipeline {
 
         stage('parallel2') {
           steps {
-            sh 'echo "hello parallel_2"'
+            sh 'for i in {1..5}; do echo "hello $i time" && sleep 1; done'
           }
         }
 
