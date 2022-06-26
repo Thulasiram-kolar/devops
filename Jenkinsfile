@@ -36,11 +36,5 @@ pipeline {
       }
     }
 
-    stage('stage4') {
-      steps {
-        sh 'echo "added stage 4"'
-      }
-    }
-
   }
 }
