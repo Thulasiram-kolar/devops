@@ -25,25 +25,8 @@ pipeline {
     }
 
     stage('stage2') {
-      parallel {
-        stage('stage2') {
-          steps {
-            sh 'echo "hello stage2"'
-          }
-        }
-
-        stage('parallel3') {
-          steps {
-            sh 'echo "hello parallel3 in stage 2"'
-          }
-        }
-
-      }
-    }
-
-    stage('stage3') {
       steps {
-        sh 'echo "hello stage 3"'
+        sh 'echo "hello stage2"'
       }
     }
 
